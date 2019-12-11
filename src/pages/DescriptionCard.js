@@ -5,6 +5,7 @@ const DescriptionCardContainer = styled.div`
   width: 40%;
   margin-right: 20px;
   border: 1px solid;
+  font-family: "Roboto", sans-serif;
 `
 
 const ChallangeSection = styled.div``

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Welcome to Koin Winter Core challange`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Basic app`,
+    author: `koinonia`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

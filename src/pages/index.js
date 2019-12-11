@@ -41,7 +41,6 @@ const IndexPage = () => (
     <p>Welcome to Koin</p>
     <p>Some text here</p>
     <ChallengeForm />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
 )
 
