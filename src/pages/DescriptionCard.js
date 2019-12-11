@@ -6,6 +6,7 @@ const DescriptionCardContainer = styled.div`
   margin-right: 20px;
   border: 1px solid;
   font-family: "Roboto", sans-serif;
+  display: flex;
 `
 
 const ChallangeSection = styled.div``

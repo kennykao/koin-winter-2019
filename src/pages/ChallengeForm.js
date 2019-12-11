@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import P from "prop-types"
 import styled from "styled-components"
+import Button from "@splunk/react-ui/Button"
 import ControlGroup from "@splunk/react-ui/ControlGroup"
 import Text from "@splunk/react-ui/Text"
 import Link from "@splunk/react-ui/Link"
@@ -140,7 +141,7 @@ const ChallengeForm = () => {
           }}
         />
       </StyledControlGroup>
-      <button onClick={handleSubmit}> submit</button>
+      <Button onClick={handleSubmit}> submit</Button>
     </>
   )
 }
