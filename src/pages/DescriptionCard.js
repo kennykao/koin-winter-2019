@@ -2,11 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const DescriptionCardContainer = styled.div`
-  width: 40%;
-  margin-right: 20px;
-  border: 1px solid;
+  border: 1px solid black;
   font-family: "Roboto", sans-serif;
-  display: flex;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 50px 50px;
 `
 
 const ChallangeSection = styled.div``

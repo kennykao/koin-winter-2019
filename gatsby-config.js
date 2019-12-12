@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Welcome to Koin Winter Core challange`,
+    title: `Welcome to Koin Winter Core  Workout 💪`,
     description: `Basic app`,
     author: `koinonia`,
   },

@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `url("https://image.freepik.com/free-vector/snowy-christmas-landscape_1048-9040.jpg") fixed`,
       marginBottom: `1.45rem`,
     }}
   >
