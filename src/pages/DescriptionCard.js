@@ -21,33 +21,39 @@ const ImageDiv = styled.div`
   text-align: center;
 `
 
+const ChallangeName = styled.div`
+  font-weight: 10;
+`
 const ValueDiv = styled.div``
 const DescriptionCard = ({ value, challange, image }) => {
   return (
-    <DescriptionCardContainer>
-      <ValueDiv>
-        <ValueSection style={{ color: "#272343" }}>
-          {" "}
-          {value}
-          {image ? (
-            <ImageDiv>
-              <img src={require("../images/" + image + ".png")} />
-            </ImageDiv>
-          ) : null}
-        </ValueSection>
-      </ValueDiv>
-      <div>
-        {Object.keys(challange).map((keyName, i) => {
-          return (
-            <ChallangeSection>
-              {challange[keyName].type}
-              {": "}
-              {challange[keyName].points}
-            </ChallangeSection>
-          )
-        })}
-      </div>
-    </DescriptionCardContainer>
+    <>
+      {challange ? (
+        <DescriptionCardContainer>
+          <ValueDiv>
+            <ValueSection style={{ color: "#272343" }}>
+              {value}
+              {image ? (
+                <ImageDiv>
+                  <img src={require("../images/" + image + ".png")} />
+                </ImageDiv>
+              ) : null}
+            </ValueSection>
+          </ValueDiv>
+          <div>
+            {Object.keys(challange).map((keyName, i) => {
+              return (
+                <ChallangeSection>
+                  <b style={{ fontWeight: 50 }}>{challange[keyName].type}</b>
+                  {": "}
+                  {challange[keyName].points}
+                </ChallangeSection>
+              )
+            })}
+          </div>
+        </DescriptionCardContainer>
+      ) : null}
+    </>
   )
 }
 
