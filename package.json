@@ -5,9 +5,9 @@
   "version": "0.1.0",
   "author": "Kenny Kao",
   "engines": {
-  "npm": "5.7.1",
-  "node": "9.5.0"
-   },
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "dependencies": {
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
@@ -32,7 +32,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm install && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
