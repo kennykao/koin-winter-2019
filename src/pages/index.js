@@ -8,7 +8,7 @@ import ChallengeForm from "./ChallengeForm"
 const DescriptionCardContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
-  text-align: center;
+  text-align: left;
 `
 
 const winterDiv = []
@@ -50,22 +50,53 @@ const reachingOutList = [
   },
 ]
 
+const DivSpacer = styled.div`
+  padding-top: 80px;
+`
 const IndexPage = () => (
   <Layout>
     <DescriptionCardContainer>
-      <DescriptionCard value={"Connecting with God"} challange={connectList} />
-      <DescriptionCard value={"Training Up"} challange={trainingUpList} />
+      <DescriptionCard
+        value={"Connecting with God"}
+        challange={connectList}
+        image={"bible"}
+      />
+      <DescriptionCard
+        value={"Training Up"}
+        challange={trainingUpList}
+        image={"muscle"}
+      />
     </DescriptionCardContainer>
 
     <DescriptionCardContainer>
-      <DescriptionCard value={"Getting Close"} challange={gettingCloseList} />
-      <DescriptionCard value={"Reaching Out"} challange={reachingOutList} />
+      <DescriptionCard
+        value={"Getting Close"}
+        challange={gettingCloseList}
+        image={"social-reach"}
+      />
+      <DescriptionCard
+        value={"Reaching Out"}
+        challange={reachingOutList}
+        image={"growth"}
+      />
     </DescriptionCardContainer>
 
-    <h1>Hi people</h1>
-    <p>Welcome to Koin winter workout. Here is some random text to read </p>
+    <DivSpacer />
+    <p>
+      <b>Goal</b>: Work out our “core” (values) this winter break together.
+      <br />
+      <b>When</b>: The four weeks of Winter Break (12/21 - 1/17)
+      <br />
+      <b>Teams</b>: Core Values: Connecting w/ God, Getting Close, Training Up,
+      and Reaching Out <br /> <b>The Prize</b>: The winning team will get to
+      have Korean BBQ hosted by Koin House.
+    </p>
+
+    <DivSpacer />
+
+    <p>Log your results below!</p>
     <ChallengeForm />
-    <br />
+    <div style={{ paddingTop: "30px" }} />
     <Link to="/results">View results here</Link>
   </Layout>
 )

@@ -3,6 +3,9 @@ import styled from "styled-components"
 import TabLayout from "@splunk/react-ui/TabLayout"
 import Table from "@splunk/react-ui/Table"
 
+const DivSpacer = styled.div`
+  padding-top: 30px;
+`
 const mockData = [
   {
     name: "kenny",
@@ -30,6 +33,7 @@ const ResultsViewer = () => {
     <>
       <TabLayout defaultActivePanelId="team1">
         <TabLayout.Panel label=" Team 1" panelId="team1">
+          <DivSpacer />
           <Table>
             <Table.Head>
               <Table.HeadCell> Name </Table.HeadCell>

@@ -24,32 +24,6 @@ const StyledTextArea = styled.div`
 
 const StyledText = styled(Text)``
 
-const requiredFields = {
-  companyName: {
-    name: "Company Name",
-    isValid: value => !!value,
-  },
-  addressLine1: {
-    name: "Street Address",
-    isValid: value => !!value,
-  },
-  city: {
-    name: "City",
-    isValid: value => !!value,
-  },
-  stateValue: {
-    name: "State",
-    isValid: value => !!value,
-  },
-  zip: {
-    name: "Zip",
-    isValid: value => !!value,
-  },
-  country: {
-    name: "Country",
-    isValid: value => !!value,
-  },
-}
 /*
 export const validate = ({ state }) => {
   const errors = []
@@ -105,6 +79,7 @@ const ChallengeForm = () => {
 
   return (
     <>
+      Name
       <StyledControlGroup labelPosition="top" label="Fields" hideLabel>
         <StyledText
           canClear
@@ -117,6 +92,7 @@ const ChallengeForm = () => {
           }}
         />
       </StyledControlGroup>
+      Date
       <StyledControlGroup labelPosition="top" label="Fields" hideLabel>
         <StyledText
           canClear
@@ -129,6 +105,7 @@ const ChallengeForm = () => {
           }}
         />
       </StyledControlGroup>
+      Description
       <StyledControlGroup labelPosition="top" label="Fields" hideLabel>
         <StyledText
           canClear
